@@ -15,6 +15,8 @@ OS X 10.8 or above. Tested on Mavericks and Yosemite.
 
 ## Installation
 
+Step 0: download the repo as zip file, then unzip it. Open terminal in newly unzipped folder.
+
 Step 1: `sudo cp batterylifeextender.sh /usr/local/bin/batterylifeextender`
 
 Step 2: `sudo chmod +x /usr/local/bin/batterylifeextender`
