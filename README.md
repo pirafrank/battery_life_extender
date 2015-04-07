@@ -11,7 +11,7 @@ The niblest solution of a battery life extender for OS X
 
 ## Requirements
 
-OS X 10.8 or above should be enough! Tested on Mavericks.
+OS X 10.8 or above. Tested on Mavericks and Yosemite.
 
 ## Installation
 
