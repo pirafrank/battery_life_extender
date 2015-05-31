@@ -1,10 +1,13 @@
 #!/bin/bash
 
 ########################################################################
-# BatteryLifeExtender
-# Notifies the user when plug or unplug the power cord to extend the overall battery life
+# BatteryLifeExtender <https://github.com/pirafrank/battery_life_extender>
+# Notifies the user when plug or unplug the power cord to extend 
+# the overall battery life
 #
-# Copyright (C) 2015 Francesco Pira <francescopira.me@gmail.com> 
+# Copyright (C) 2015 Francesco Pira <dev@fpira.com> 
+#
+# This file is part of battery_life_extender
 #
 # This script is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,9 +21,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this script.  If not, see <http://www.gnu.org/licenses/>.
-
-# developer's website: fpira.com
-
+#
 ########################################################################
 
 status="$(pmset -g batt | egrep "([0-9]+\%).*" -o)"
