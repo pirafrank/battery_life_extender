@@ -33,7 +33,7 @@ Step 4: `launchctl load ~/Library/LaunchAgents/com.fpira.batterylifeextender.pli
 - Installer (.pkg)
 
 ## License
-The software in this repository are released under the GNU GPLv3 License by Francesco Pira (francescopira[dot]me[at]gmail[dot]com, pirafrank.github.io). You can read the terms of the license [here](http://www.gnu.org/licenses/gpl-3.0.html).
+The software in this repository are released under the GNU GPLv3 License by Francesco Pira (dev[at]fpira[dot]com, fpira.com). You can read the terms of the license [here](http://www.gnu.org/licenses/gpl-3.0.html).
 
 ## Documentation
 
