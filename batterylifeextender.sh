@@ -2,10 +2,10 @@
 
 ########################################################################
 # BatteryLifeExtender <https://github.com/pirafrank/battery_life_extender>
-# Notifies the user when plug or unplug the power cord to extend 
+# Notifies the user when plug or unplug the power cord to extend
 # the overall battery life
 #
-# Copyright (C) 2015 Francesco Pira <dev@fpira.com> 
+# Copyright (C) 2015 Francesco Pira <dev@fpira.com>
 #
 # This file is part of battery_life_extender
 #
@@ -33,15 +33,15 @@ if [ "${status/$substring1}" = "$status" ] ; then
   if (( "$charge" >= 80 )) ; then
      # notify
      thescript='display notification "You can now unplug the power cord to extend the overall battery life." with title "BatteryLifeExtender" subtitle '
-     the2part="\"Unplug your mac! Charge is ${charge}%\""
+     the2part="\"Unplug your Mac! Charge is ${charge}%\""
      /usr/bin/osascript -e "${thescript}${the2part}"
   fi
 else
   #echo "discharging..."
   if (( "$charge" <= 40 )) ; then
      # notify
-     thescript='display notification "You should plug your mac to a power outlet to extend the overall battery life." with title "BatteryLifeExtender" subtitle '
-     the2part="\"Plug you mac! Charge is ${charge}%\""
-     /usr/bin/osascript -e "${thescript}${the2part}"  
+     thescript='display notification "You should plug your Mac to a power outlet to extend the overall battery life." with title "BatteryLifeExtender" subtitle '
+     the2part="\"Plug you Mac! Charge is ${charge}%\""
+     /usr/bin/osascript -e "${thescript}${the2part}"
   fi
 fi
