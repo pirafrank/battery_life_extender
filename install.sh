@@ -43,8 +43,8 @@ cd /tmp/batterylifeextender
 echo "
 
 Downloading executables..."
-wget -O "batterylifeextender.sh" https://github.com/pirafrank/battery_life_extender/raw/master/batterylifeextender.sh
-wget -O "com.fpira.batterylifeextender.plist" https://github.com/pirafrank/battery_life_extender/raw/master/com.fpira.batterylifeextender.plist
+curl -o "batterylifeextender.sh" https://github.com/pirafrank/battery_life_extender/raw/master/batterylifeextender.sh
+curl -o "com.fpira.batterylifeextender.plist" https://github.com/pirafrank/battery_life_extender/raw/master/com.fpira.batterylifeextender.plist
 
 echo "
 Installing..."
