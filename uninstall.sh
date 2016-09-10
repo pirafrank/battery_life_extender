@@ -26,7 +26,7 @@
 #
 ########################################################################
 
-if [[ $EUID -ne 0 ]]; then
+if ! sudo -v >/dev/null 2>&1; then
     echo "Sorry, no root priviledges."
     echo "Please rerun using 'sudo'!
     "
@@ -40,8 +40,8 @@ Welcome to battery life extender uninstall script!
 echo "
 
 Uninstalling..."
-launchctl unload /Library/LaunchAgents/com.fpira.batterylifeextender.plist
-rm -rf /Library/LaunchAgents/com.fpira.batterylifeextender.plist
+sudo launchctl unload /Library/LaunchAgents/com.fpira.batterylifeextender.plist
+sudo rm -rf /Library/LaunchAgents/com.fpira.batterylifeextender.plist
 rm -rf /usr/local/bin/batterylifeextender
 
 echo "

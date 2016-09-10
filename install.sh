@@ -26,7 +26,7 @@
 #
 ########################################################################
 
-if [[ $EUID -ne 0 ]]; then
+if ! sudo -v >/dev/null 2>&1; then
     echo "Sorry, no root priviledges."
     echo "Please rerun using 'sudo'!
     "
@@ -51,8 +51,8 @@ Installing..."
 mkdir -p /usr/local/bin
 cp batterylifeextender.sh /usr/local/bin/batterylifeextender
 chmod +x /usr/local/bin/batterylifeextender
-cp com.fpira.batterylifeextender.plist /Library/LaunchAgents/
-launchctl load /Library/LaunchAgents/com.fpira.batterylifeextender.plist
+sudo cp com.fpira.batterylifeextender.plist /Library/LaunchAgents/
+sudo launchctl load /Library/LaunchAgents/com.fpira.batterylifeextender.plist
 
 echo "
 Cleaning up..."
